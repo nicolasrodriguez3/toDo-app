@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // preguntar si hay tareas guardadas en localStorage
   if(localStorage.getItem("tareas"))
     tareas = JSON.parse(localStorage.getItem("tareas"))
-
+    
   pintarTareas()
 });
 
@@ -60,7 +60,7 @@ const pintarTareas = () => {
 
   // si no tenemos tareas 
   if (Object.values(tareas).length === 0){
-    listaTareas.innerHTML = `<div class="alert alert-dark text-center">Anto la mas hermosa 😍</div>`
+    listaTareas.innerHTML = `<div class="alert alert-dark text-center">No hay tareas pendientes 🙌</div>`
     return
   }
     
